@@ -23,7 +23,7 @@ p {
     color: #8f8f8f;
 }
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 #title {
@@ -55,6 +55,9 @@ p {
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+
 }
 .feature-box {
     text-align: center;
@@ -63,6 +66,8 @@ p {
  /* Features */
 #features {
     padding:7% 15%;
+    background-color: white;
+    position: relative;
 }
 .icon {
     color: #ef8172;
@@ -106,5 +111,15 @@ p {
 }
 .pricing-column {
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+    #title {
+        text-align: center;
+    }
 }
 
